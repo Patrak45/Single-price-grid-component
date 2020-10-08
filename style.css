@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: #E5EFF5;
+}
+.container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 650px;
+    margin-top: 15vh;
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(229,239,245,1);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(229,239,245,1);
+    box-shadow: 0px 0px 22px 0px rgba(229,239,245,1);
+}
+.join{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #FFF;
+    padding: 40px 40px;
+    border-radius: 10px 10px 0 0;
+}
+.join h1{
+    color: #2AB2AF;
+    font-size: 24px;
+}
+.join h2{
+    margin-top: 40px;
+    font-weight: 400;
+    color: #C0DF34;
+}
+.join p{
+    margin-top: 20px;
+    color: #98A6BD;
+    line-height: 1.8;
+}
+.subscription{
+    background-color: #2AB2AF;
+    padding: 40px 40px;
+    color: #FFF;
+    border-radius: 0 0 0 10px;
+}
+.subscription h1{
+    font-size: 24px;
+    font-weight: 400;
+}
+.subscription .price{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.subscription .price span{
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.subscription .access{
+    margin-top: 20px;
+}
+.subscription button{
+    margin-top: 40px;
+    background-color: #C0DF34;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+    border: none;
+    color: #FFF;
+    font-weight: 700;
+    width: 100%;
+}
+.subscription button:hover{
+    cursor: pointer;
+}
+
+.whyus{
+    background-color: #4ABEBD;
+    padding: 40px 40px;
+    color: #FFF;
+    border-radius: 0 0 10px 0;
+}
+.whyus h1{
+    font-size: 24px;
+    font-weight: 400;
+}
+.whyus ul{
+    margin-top: 40px;
+    list-style: none;
+    line-height: 1.5;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2AB2AF;
+    color: #FFF;
+}
+footer .attribution{
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    .container{
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 50px 20px;
+    }
+    .subscription{
+        border-radius: 0;
+    }
+    .whyus{
+        border-radius: 0 0 10px 10px;
+    }
+}
